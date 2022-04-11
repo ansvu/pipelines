@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
 spec:
+  storageClassName: ocs-storagecluster-cephfs
   accessModes:
   - ReadWriteOnce
   resources:
