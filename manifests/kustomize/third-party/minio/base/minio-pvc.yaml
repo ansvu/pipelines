@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: minio-pvc
 spec:
+  storageClassName: ocs-storagecluster-cephfs
   accessModes:
   - ReadWriteOnce
   resources:
